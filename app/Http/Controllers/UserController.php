@@ -10,7 +10,8 @@ class UserController extends Controller
         return 'Userlar royxati';
     }
     public function show($user){
-        return 'Tanlangan user bu: ' . $user;
+        return view('users.show', ['name' =>'Hojiakbar', 'id'=>$user]);
+//        return 'Tanlangan user bu: ' . $user;
     }
     public function create(){
         return view('users.create');
